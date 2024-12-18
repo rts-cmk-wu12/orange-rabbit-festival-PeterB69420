@@ -1,0 +1,49 @@
+// font import
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// variables
+
+$bg-color: #ffff;
+$txt-color: #000;
+$border-color: #e6e6e6;
+$button-color: #ff6b00;
+
+.placeholder{
+    background-color: $bg-color;
+}
+
+.ticket-form {
+    display: grid;
+    gap: 1rem;
+
+    &__txt {
+        font-family: 'Open sans';
+        font-weight: bold;
+    }
+
+    &__input {
+        font-family: 'Open sans';
+        width: 506px;
+        height: 40px;
+        padding: 1rem;
+        outline: none;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: $border-color;
+    }
+}
+
+.add-button {
+    margin-top: 2rem;
+    width: 255px;
+    height: 65px;
+    border-radius: 70px;
+    outline: none;
+    border: none;
+    background-color: $button-color;
+    color: $bg-color;
+    font-weight: bold;
+    font-family: 'Open sans';
+    font-size: 18px;
+    cursor: pointer;
+}

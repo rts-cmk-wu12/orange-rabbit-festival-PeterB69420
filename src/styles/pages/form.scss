@@ -11,9 +11,9 @@ $border-color: #e6e6e6;
 .ticket-container {
     display: flex;
     place-content: center;
-    
+    padding: 1rem;
     &__img {
-        width: 777px;
+        width: 400px;
         height: 826.16px;
     }
 
@@ -22,15 +22,15 @@ $border-color: #e6e6e6;
         background-color: $bg-color;
         display: flex;
         flex-direction: column;
-        padding: 3rem;
+        padding: 3.5rem;
         gap: 1rem;
-
     }
 
     &__captxt {
         text-transform: uppercase;
         font-family: 'Open sans';
         font-weight: bold;
+        font-size: 12px;
     }
 
     &__h {

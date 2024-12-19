@@ -7,6 +7,7 @@ $bg-color: #ffff;
 $txt-color: #000;
 $border-color: #e6e6e6;
 $button-color: #ff6b00;
+$localstrg-color: #8c8c8c;
 
 .placeholder{
     background-color: $bg-color;
@@ -15,6 +16,7 @@ $button-color: #ff6b00;
 .ticket-form {
     display: grid;
     gap: 1rem;
+    place-content: center;
 
     &__txt {
         font-family: 'Open sans';
@@ -35,6 +37,7 @@ $button-color: #ff6b00;
 
 .add-button {
     margin-top: 2rem;
+    margin-left: 3rem;
     width: 255px;
     height: 65px;
     border-radius: 70px;
@@ -46,4 +49,63 @@ $button-color: #ff6b00;
     font-family: 'Open sans';
     font-size: 18px;
     cursor: pointer;
+}
+
+.popup {
+    display: flex;
+}
+
+.participant-container {
+    width: 433px;
+    height: 826px;
+    background-color: $bg-color;
+    margin-left: 1rem;
+    padding: 3rem;
+    
+    &__indi {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        font-size: 12px;
+        font-family: 'Open sans';
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    &__h {
+        font-size: 22px;
+        font-family: 'Open sans';
+        font-weight: bold;
+    }
+    &__name {
+        font-size: 18px;
+        font-family: 'Open sans';
+        font-weight: bold;
+    }
+
+    &__txt {
+        font-size: 18px;
+        font-family: 'Open sans';
+        color: $localstrg-color;
+    }
+
+    &__info {
+        margin-top: 3rem;
+    }
+}
+
+.submit-button {
+    width: 433px;
+    height: 93px;
+    margin-left: 1rem;
+    outline: none;
+    border: none;
+    background-color: $button-color;
+    font-family: 'Open sans';
+    font-size: 18px;
+    font-weight: bold;
+    color: $bg-color;
+    display: flex;
+    align-items: center;
+    place-content: center;
 }

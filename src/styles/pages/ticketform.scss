@@ -8,6 +8,7 @@ $txt-color: #000;
 $border-color: #e6e6e6;
 $button-color: #ff6b00;
 $localstrg-color: #8c8c8c;
+$hover-color: #D80A0A;
 
 .placeholder{
     background-color: $bg-color;
@@ -17,7 +18,7 @@ $localstrg-color: #8c8c8c;
     display: grid;
     gap: 1rem;
     place-content: center;
-
+    margin-bottom: 2rem;
     &__txt {
         font-family: 'Open sans';
         font-weight: bold;
@@ -37,7 +38,6 @@ $localstrg-color: #8c8c8c;
 
 .add-button {
     margin-top: 2rem;
-    margin-left: 3rem;
     width: 255px;
     height: 65px;
     border-radius: 70px;
@@ -92,9 +92,28 @@ $localstrg-color: #8c8c8c;
     &__info {
         margin-top: 3rem;
     }
+
+    &__none {
+        color: #8c8c8c;
+        font-size: 18px;
+        font-family: 'Open sans';
+    }
+
+    &__button {
+        outline: none;
+        background: none;
+        border: none;
+        color: #8c8c8c;
+        transition: 0.3s;
+        font-size: 20px;
+    }
+    &__button:hover {
+        color: $hover-color;
+    }
 }
 
-.submit-button {
+
+.checkout-button {
     width: 433px;
     height: 93px;
     margin-left: 1rem;
@@ -108,4 +127,6 @@ $localstrg-color: #8c8c8c;
     display: flex;
     align-items: center;
     place-content: center;
+    justify-content: space-between;
+    padding: 0 3rem;
 }
